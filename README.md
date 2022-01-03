@@ -1,7 +1,7 @@
 # SNPop
 An application package for the collection, visualization and small scale analysis of catalogued data regarding single nucleotide polymorphismsacross populations.
 
-Important: SNPanalysis utilizies the LDlinkR package, hence it requires a private user token to function. IF you wish to use SNPanalysis replace the string: 'user_token' in the code, with a token retrieved from: https://ldlink.nci.nih.gov/?tab=apiaccess.
+Important: SNPanalysis utilizies the LDlinkR package, hence it requires a private user token to function. If you wish to use SNPanalysis replace the string: 'user_token' in the code, with a token retrieved from: https://ldlink.nci.nih.gov/?tab=apiaccess.
 
 The data flow/logic of SNPop's algorith is showcased in the figure below:
 ![1 vpd](https://user-images.githubusercontent.com/68243875/147920381-2196bc6b-e546-415a-9024-e4b58f510a98.png)
