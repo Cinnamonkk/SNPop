@@ -97,22 +97,22 @@ hapfinderfunc <- function(snplist,population){
   snp <- sort(snplist)
 
   if (population == 'Total'){
-    hapmap <- (LDhap(snp,pop ='ALL',token ='430a1f88f6ee'))
+    hapmap <- (LDhap(snp,pop ='ALL',token ='user_token'))
   }
   if (population == 'African'){
-    hapmap <- (LDhap(snp,pop ='AFR',token ='430a1f88f6ee'))
+    hapmap <- (LDhap(snp,pop ='AFR',token ='user_token'))
   }
   if (population == 'American'){
-    hapmap <- (LDhap(snp,pop ='AMR',token ='430a1f88f6ee'))
+    hapmap <- (LDhap(snp,pop ='AMR',token ='user_token'))
   }
   if (population == 'East Asian'){
-    hapmap <- (LDhap(snp,pop ='EAS',token ='430a1f88f6ee'))
+    hapmap <- (LDhap(snp,pop ='EAS',token ='user_token'))
   }
   if (population == 'South Asian'){
-    hapmap <- (LDhap(snp,pop ='SAS',token ='430a1f88f6ee'))
+    hapmap <- (LDhap(snp,pop ='SAS',token ='user_toekn'))
   }
   if (population == 'European'){
-    hapmap <- (LDhap(snp,pop ='EUR',token ='430a1f88f6ee'))
+    hapmap <- (LDhap(snp,pop ='EUR',token ='user_token'))
   }
 
   return(hapmap)
@@ -124,22 +124,22 @@ r2finderfunc <- function(snp,population){
   snp <- sort(snp)
 
   if (population == 'Total'){
-    r2matrix <- (LDmatrix(snp,pop ='ALL',r2d = 'r2',token ='430a1f88f6ee'))
+    r2matrix <- (LDmatrix(snp,pop ='ALL',r2d = 'r2',token ='user_token'))
   }
   if (population == 'African'){
-    r2matrix <- (LDmatrix(snp,pop ='AFR',r2d = 'r2',token ='430a1f88f6ee'))
+    r2matrix <- (LDmatrix(snp,pop ='AFR',r2d = 'r2',token ='user_token'))
   }
   if (population == 'American'){
-    r2matrix <- (LDmatrix(snp,pop ='AMR',r2d = 'r2',token ='430a1f88f6ee'))
+    r2matrix <- (LDmatrix(snp,pop ='AMR',r2d = 'r2',token ='user_token'))
   }
   if (population == 'East Asian'){
-    r2matrix <- (LDmatrix(snp,pop ='EAS',r2d = 'r2',token ='430a1f88f6ee'))
+    r2matrix <- (LDmatrix(snp,pop ='EAS',r2d = 'r2',token ='user_token'))
   }
   if (population == 'South Asian'){
-    r2matrix <- (LDmatrix(snp,pop ='SAS',r2d = 'r2',token ='430a1f88f6ee'))
+    r2matrix <- (LDmatrix(snp,pop ='SAS',r2d = 'r2',token ='user_token'))
   }
   if (population == 'European'){
-    r2matrix <- (LDmatrix(snp,pop ='EUR',r2d = 'r2',token ='430a1f88f6ee'))
+    r2matrix <- (LDmatrix(snp,pop ='EUR',r2d = 'r2',token ='user_token'))
   }
 
 
@@ -151,22 +151,22 @@ dfinderfunc <- function(snp,population){
   snp <- sort(snp)
 
   if (population == 'Total'){
-    dmatrix <- (LDmatrix(snp,pop ='ALL',r2d = 'd',token ='430a1f88f6ee'))
+    dmatrix <- (LDmatrix(snp,pop ='ALL',r2d = 'd',token ='user_token'))
   }
   if (population == 'African'){
-    dmatrix <- (LDmatrix(snp,pop ='AFR',r2d = 'd',token ='430a1f88f6ee'))
+    dmatrix <- (LDmatrix(snp,pop ='AFR',r2d = 'd',token ='user_token'))
   }
   if (population == 'American'){
-    dmatrix <- (LDmatrix(snp,pop ='AMR',r2d = 'd',token ='430a1f88f6ee'))
+    dmatrix <- (LDmatrix(snp,pop ='AMR',r2d = 'd',token ='user_token'))
   }
   if (population == 'East Asian'){
-    dmatrix <- (LDmatrix(snp,pop ='EAS',r2d = 'd',token ='430a1f88f6ee'))
+    dmatrix <- (LDmatrix(snp,pop ='EAS',r2d = 'd',token ='user_token'))
   }
   if (population == 'South Asian'){
-    dmatrix <- (LDmatrix(snp,pop ='SAS',r2d = 'd',token ='430a1f88f6ee'))
+    dmatrix <- (LDmatrix(snp,pop ='SAS',r2d = 'd',token ='user_token'))
   }
   if (population == 'European'){
-    dmatrix <- (LDmatrix(snp,pop ='EUR',r2d = 'd',token ='430a1f88f6ee'))
+    dmatrix <- (LDmatrix(snp,pop ='EUR',r2d = 'd',token ='user_token'))
   }
 
   return(dmatrix)
