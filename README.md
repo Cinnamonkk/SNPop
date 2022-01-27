@@ -1,9 +1,5 @@
-# Abstract 
-The constant improvement of high throughput sequencing technologies (HTS), as well as the steep decline of their cost, has resulted in a data “revolution” in the field of genomics.  Genomic data are now catalogued in databases faster than they can be interpreted and the volume of data is increasing exponentially. Of this data, a big part is Single Nucleotide Polymorphisms (SNPs) data, which entail 99\% of human genetic variation. SNP research requires the retrieval of large volumes of data, available in different genomic databases. However, bulk retrieval of SNP data from various databases is inefficient when done non-programmatically.  Software with user-friendly Graphical User Interfaces (GUIs), able to retrieve SNP data, are the exception to the rule. Additionally, while they provide great functionality on their own, the interaction of their file outputs to produce complete data sets appears inefficient. The application package “SNPop”, includes two programmes with a user-friendly GUI. "SNPfinder" written in python allows for the accurate retrieval of data for desired SNPs, by utilizing different search filters set by the user. “SNPanalysis” is written in R and handles reliably the analysis and visualization of the SNP data. Importance is given to SNPanalysis’s association of catalogued haplotypes, from the five main populations of the 1000 Genomes project, with the phenotype characteristics of the selected SNPs, a function unavailable in other software. The available information varies between different SNPs and databases, as a result, incomplete associations can be made. Consequently, SNPop’s role is to paint a picture regarding the association of SNPs, populations, phenotypes and haplotypes. The result shouldn't be taken for granted but as a direction for the user's further research.
-
-
 # Brief Introduction
-A revolution has occurred in the field of genomics. The human genome has become as accessible as ever and data regarding variations in the genome appear faster than they can be interpreted. For example, DbSNP, the most popular  database for single nucleotide variants, micro-satellites, and small-scale insertions and deletions,doubled its data size from  557,939,960 submissions to 907,237,763 between 2016-2017 and then again from 907,237,763 to 1,828,331,768 from 2017 to 2018 as its shown in the figure below. In 2021 DbSNP has 3,341,554,567 submissions. The evident acute growth in the amount of data available on human genetic variation as well as variation in other species classified genomics as a "big data" field and sparked the interest for the development of SNPop.
+The constant improvement of high throughput sequencing technologies (HTS), as well as the steep decline of their cost, has resulted in a data “revolution” in the field of genomics. Of these data, a big part is Single Nucleotide Polymorphisms (SNPs) data, which entail 99\% of human genetic variation. For example, DbSNP, the most popular  database for single nucleotide variants, micro-satellites, and small-scale insertions and deletions,doubled its data size from  *557,939,960* submissions to *907,237,763* between 2016-2017 and then again from *907,237,763* to *1,828,331,768* from 2017 to 2018 as its shown in the figure below. In 2021 DbSNP has *3,341,554,567* submissions. The evident acute growth in the amount of data available on human genetic variation as well as variation in other species classified genomics as a "big data" field and sparked the interest for the development of SNPop.
 <p align="center">
   <img src="images/Rplot02.png" /><br>
   data source: https://www.ncbi.nlm.nih.gov/projects/SNP/snp_summary.cgi
@@ -15,7 +11,7 @@ SNPop contains two user-friendly GUI software: SNPfinder written in python and S
 
 **Important:** SNPanalysis utilizies the LDlinkR package, hence it requires a private user token to function. If you wish to use SNPanalysis replace the string: 'user_token' in the code, with a token retrieved from: https://ldlink.nci.nih.gov/?tab=apiaccess.
 
-### Data-set 
+### Data-set :
 The data source selected for the algorithm is the secondary SNP data set of which the 1000 Genomes project provides a population frequency in dbSNP. This data set was chosen since the 1000 Genomes Project provides additional data for specific populations, as well as phased genotypes in other databases. 
 
 ### Algorithm: 
@@ -65,7 +61,7 @@ The overview tab provides a bar chart, where each bar represents the frequency o
 ### Linkage disequilibrium tab
 LD tab delivers matrices of the D' and r squared pairwise calculations for the imported SNPs, as well as the graphical representation of these matrices as heatmaps in the corresponding sub-tabs.  The LD population heatmaps produced by the pairwise calculations of rs1208, rs1041983, rs1799930, rs1799931, rs1801279 and rs1801280 for the African Population are displayed below as an example. A gradient palette of purple = 0 to yellow = 1, is used to map the retrieved values. Furthermore, white squares correspond to unavailable LD data for the SNP pair in the corresponding population.
 
-- **$r squared$ LD heatmap**
+- **r squared LD heatmap**
 <p align="center">
   <img src="images/NAT2 r2 African.png" />
 </p>
@@ -90,6 +86,6 @@ Considering the previous sections the data pipeline SNPop produces is showcased 
   <img src="https://user-images.githubusercontent.com/68243875/147920326-039fb6c1-6b0e-4b80-ba94-c8259b55d29b.png" />
 </p>
 
-# limitations and recommendations
+# Limitations and recommendations
 - Limitations: SNPop is limited by data available in databases, this results in possible omitted SNPs and/or traits. Consequently, while SNPop can paint an accurate picture for the phenotype associated with a haplotype across populations. It's results shouldn't be taken for granted but as a direction for the user's further research on the topic.
 - Recommendation: An addition that would greatly increase SNPpop functionality is the inclusion of the option to select specific sub-populations for each main population. This can be achieved by modifying the code of the data collection API functions in SNPfinder as well as the LDlinkR functions in SNPanalysis.
