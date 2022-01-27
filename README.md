@@ -1,3 +1,29 @@
+# Brief Introduction
+The constant improvement of high throughput sequencing technologies (HTS), as well as the steep decline of their cost, has resulted in a data “revolution” in the field of genomics. Of these data, a big part is Single Nucleotide Polymorphisms (SNPs) data, which entail 99\% of human genetic variation. For example, DbSNP, the most popular  database for single nucleotide variants, micro-satellites, and small-scale insertions and deletions,doubled its data size from  *557,939,960* submissions to *907,237,763* between 2016-2017 and then again from *907,237,763* to *1,828,331,768* from 2017 to 2018 as its shown in the figure below. In 2021 DbSNP has *3,341,554,567* submissions. The evident acute growth in the amount of data available on human genetic variation as well as variation in other species classified genomics as a "big data" field and sparked the interest for the development of SNPop.
+<p align="center">
+  <img src="images/Rplot02.png" /><br>
+  data source: https://www.ncbi.nlm.nih.gov/projects/SNP/snp_summary.cgi
+</p>
+
+# SNPop
+Is an application package for the collection, visualization and small scale analysis of annotated data regarding single nucleotide polymorphisms across populations.
+SNPop contains two user-friendly GUI software: SNPfinder written in python and SNPanalysis written in R. 
+
+**Important:** SNPanalysis utilizies the LDlinkR package, hence it requires a private user token to function. If you wish to use SNPanalysis replace the string: 'user_token' in the code, with a token retrieved from: https://ldlink.nci.nih.gov/?tab=apiaccess.
+
+### Data-set :
+The data source selected for the algorithm is the secondary SNP data set of which the 1000 Genomes project provides a population frequency in dbSNP. This data set was chosen since the 1000 Genomes Project provides additional data for specific populations, as well as phased genotypes in other databases.
+
+### Algorithm: 
+The data flow/logic of SNPop is showcased in the following figure:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/68243875/147920381-2196bc6b-e546-415a-9024-e4b58f510a98.png" />
+</p>
+
+1. Various SNP data types are mined from databases using the Ensembl Rest API and  NCBI's The Entrez Programming Utilities (E-utilities).
+2. API/User interaction is handled by SNPfinder via the use of GUI elements and the retrieved data are processed and saved in a single csv file.
+3. The csv file is imported in SNPanalysis where the user can  visualize and analyze Linkage Disequilibrium , Haplotype and Allele frequency SNP data, along with their traits across populations.
+
 # Requirments/Launch
 
 ### Required external libraries/frameworks for SNPfinder.py
@@ -29,32 +55,6 @@ The open-source RStudio IDE is also required. It can be downloaded from [here](h
 4. Open SNPanalysis.R using RStudio and click on the "Run app" icon , alternatively press CTRL+SHIFT+ENTER.
 5. Load the csv produced from SNPfinder in SNPanalysis Input tab using the GUI file handler.
 6. Your data is loaded, procced with the analysis and visualization workflow of SNPanalysis detailed in the Snpanalysis section.
-
-# Brief Introduction
-The constant improvement of high throughput sequencing technologies (HTS), as well as the steep decline of their cost, has resulted in a data “revolution” in the field of genomics. Of these data, a big part is Single Nucleotide Polymorphisms (SNPs) data, which entail 99\% of human genetic variation. For example, DbSNP, the most popular  database for single nucleotide variants, micro-satellites, and small-scale insertions and deletions,doubled its data size from  *557,939,960* submissions to *907,237,763* between 2016-2017 and then again from *907,237,763* to *1,828,331,768* from 2017 to 2018 as its shown in the figure below. In 2021 DbSNP has *3,341,554,567* submissions. The evident acute growth in the amount of data available on human genetic variation as well as variation in other species classified genomics as a "big data" field and sparked the interest for the development of SNPop.
-<p align="center">
-  <img src="images/Rplot02.png" /><br>
-  data source: https://www.ncbi.nlm.nih.gov/projects/SNP/snp_summary.cgi
-</p>
-
-# SNPop
-Is an application package for the collection, visualization and small scale analysis of annotated data regarding single nucleotide polymorphisms across populations.
-SNPop contains two user-friendly GUI software: SNPfinder written in python and SNPanalysis written in R. 
-
-**Important:** SNPanalysis utilizies the LDlinkR package, hence it requires a private user token to function. If you wish to use SNPanalysis replace the string: 'user_token' in the code, with a token retrieved from: https://ldlink.nci.nih.gov/?tab=apiaccess.
-
-### Data-set :
-The data source selected for the algorithm is the secondary SNP data set of which the 1000 Genomes project provides a population frequency in dbSNP. This data set was chosen since the 1000 Genomes Project provides additional data for specific populations, as well as phased genotypes in other databases. 
-
-### Algorithm: 
-The data flow/logic of SNPop is showcased in the following figure:
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/68243875/147920381-2196bc6b-e546-415a-9024-e4b58f510a98.png" />
-</p>
-
-1. Various SNP data types are mined from databases using the Ensembl Rest API and  NCBI's The Entrez Programming Utilities (E-utilities).
-2. API/User interaction is handled by SNPfinder via the use of GUI elements and the retrieved data are processed and saved in a single csv file.
-3. The csv file is imported in SNPanalysis where the user can  visualize and analyze Linkage Disequilibrium , Haplotype and Allele frequency SNP data, along with their traits across populations.
 
 # SNPfinder.py
 <p align="center">
