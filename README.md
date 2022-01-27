@@ -49,7 +49,7 @@ install.packages("devtools")
 The open-source RStudio IDE is also required. It can be downloaded from [here](https://www.rstudio.com/products/rstudio/download/#download).
 
 ### Working with SNPop
-1. Open a terminal in the folder containing ```Snpfinder.py``` and run: ```python ```Snpfinder.py``` 
+1. Open a terminal in the folder containing ```Snpfinder.py``` and run: ```python Snpfinder.py``` 
 2. Procced with the workflow in the GUI of ```SNPfinder```, as explained in detail in the ```SNPfinder``` section and save the produced csv.
 3. At this point you can cLose ```SNPfinder.py``` if you wish.
 4. Open ```SNPanalysis.R``` using RStudio and click on the "Run app" icon , alternatively press CTRL+SHIFT+ENTER.
