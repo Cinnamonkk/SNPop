@@ -1,3 +1,35 @@
+# Requirments/Launch
+
+### Required external libraries/frameworks for SNPfinder.py
+
+```
+$pip install PyQt5
+$pip install requests
+$pip install pandas
+```
+
+### Required external packages for SNPanalysis.R
+
+```
+install.packages("shiny")
+install.packages("bslib")
+install.packages("tidyverse")
+install.packages("LDlinkR")
+install.packages("heatmaply")
+install.packages("shinycssloaders")
+install.packages("reactlog") 
+install.packages("devtools") 
+```
+The open-source RStudio IDE is also required. It can be downloaded from [here](https://www.rstudio.com/products/rstudio/download/#download).
+
+### Working with SNPop
+1. Open a terminal in the folder containing Snpfinder.py and run: ```python Snpfinder.py ```
+2. Procced with the workflow in the GUI of SNPfinder, as explained in detail in the SNPfinder section and save the produced csv.
+3. At this point you can cLose SNPfinder.py if you wish.
+4. Open SNPanalysis.R using RStudio and click on the "Run app" icon , alternatively press CTRL+SHIFT+ENTER.
+5. Load the csv produced from SNPfinder in SNPanalysis Input tab using the GUI file handler.
+6. Your data is loaded, procced with the analysis and visualization workflow of SNPanalysis detailed in the Snpanalysis section.
+
 # Brief Introduction
 The constant improvement of high throughput sequencing technologies (HTS), as well as the steep decline of their cost, has resulted in a data “revolution” in the field of genomics. Of these data, a big part is Single Nucleotide Polymorphisms (SNPs) data, which entail 99\% of human genetic variation. For example, DbSNP, the most popular  database for single nucleotide variants, micro-satellites, and small-scale insertions and deletions,doubled its data size from  *557,939,960* submissions to *907,237,763* between 2016-2017 and then again from *907,237,763* to *1,828,331,768* from 2017 to 2018 as its shown in the figure below. In 2021 DbSNP has *3,341,554,567* submissions. The evident acute growth in the amount of data available on human genetic variation as well as variation in other species classified genomics as a "big data" field and sparked the interest for the development of SNPop.
 <p align="center">
