@@ -61,7 +61,7 @@ The open-source RStudio IDE is also required. It can be downloaded from [here](h
   <img src="images/snpfinder.png" />
 </p>
 
-As mentioned in the previous section ```SNPfinder``` handles the interactions between the user and the implementdatabase API's. 
+As mentioned in the previous section ```SNPfinder``` handles the interactions between the user and the implemented database API's. 
 - GUI elements 2.4.1 allow the user to set a numeric search window for their SNP query. 
 - GUI elements 2.4.2 behave as filters for the SNP query. The user can search SNPs with any combination of SNP genetic region, clinical significance and >1% minor allele frequency in the population.
 - GUI elements 2.4.3 are implemented to showcase the retrieved SNPs and provide a summary of SNP data helping the user choose the SNPs for which to obtain further data.
