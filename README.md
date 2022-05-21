@@ -20,7 +20,7 @@ The data flow/logic of ```SNPop``` is showcased in the following figure:
   <img src="https://user-images.githubusercontent.com/68243875/147920381-2196bc6b-e546-415a-9024-e4b58f510a98.png" />
 </p>
 
-1. Various SNP data types are mined from databases using the Ensembl Rest API and  NCBI's The Entrez Programming Utilities (E-utilities).
+1. Various SNP data types are mined from databases using the Ensembl Rest API and  NCBI's Entrez Programming Utilities (E-utilities).
 2. API/User interaction is handled by ```SNPfinder``` via the use of GUI elements and the retrieved data are processed and saved in a single csv file.
 3. The csv file is imported in ```SNPanalysis``` where the user can  visualize and analyze Linkage Disequilibrium , Haplotype and Allele frequency SNP data, along with their traits across populations.
 
