@@ -109,7 +109,7 @@ hapfinderfunc <- function(snplist,population){
     hapmap <- (LDhap(snp,pop ='EAS',token ='user_token'))
   }
   if (population == 'South Asian'){
-    hapmap <- (LDhap(snp,pop ='SAS',token ='user_toekn'))
+    hapmap <- (LDhap(snp,pop ='SAS',token ='user_token'))
   }
   if (population == 'European'){
     hapmap <- (LDhap(snp,pop ='EUR',token ='user_token'))
